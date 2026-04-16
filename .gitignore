@@ -1,0 +1,67 @@
+# ── Secrets & Environment ─────────────────────────────────────
+.env
+.env.*
+!env_template.txt        # keep the template as a reference
+.streamlit/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+wheels/
+
+# ── Virtual Environments ──────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── AI-generated output files ─────────────────────────────────
+# These are created fresh on every run — no need to track them
+research_findings.md
+analysis_report.md
+final_report.md
+# Catch any other generated reports
+*_report.md
+*_findings.md
+
+# ── Streamlit ─────────────────────────────────────────────────
+.streamlit/secrets.toml   # local secrets — never commit this
+
+# ── CrewAI / LangChain cache ──────────────────────────────────
+.crewai/
+.langchain/
+chroma_db/
+*.db
+*.sqlite3
+
+# ── OS & Editor Junk ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Jupyter (if you ever add notebooks) ──────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Misc ──────────────────────────────────────────────────────
+*.bak
+*.tmp
+.cache/
